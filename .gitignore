@@ -1,0 +1,6 @@
+# Python tooling artifacts
+__pycache__/
+*.py[cod]
+# Local scratch/cache
+.cache/
+

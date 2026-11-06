@@ -1,0 +1,987 @@
+{
+  "description": "Audited fixed-size design drafts; not a KINII ABI or an approved wire format.",
+  "scalar_bytes": {
+    "u8": 1,
+    "u16": 2,
+    "u32": 4,
+    "u64": 8,
+    "f32": 4
+  },
+  "schemas": [
+    {
+      "name": "SurvivorNPCNode",
+      "document": "AI_FACTION_SPEC.md",
+      "fields": [
+        {
+          "type": "u64",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 24
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u16",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 2
+        },
+        {
+          "type": "u64",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        }
+      ],
+      "packed_bytes": 69,
+      "native_x64_bytes": 80,
+      "previously_claimed_bytes": 80
+    },
+    {
+      "name": "RaidBossController",
+      "document": "AI_FACTION_SPEC.md",
+      "fields": [
+        {
+          "type": "u64",
+          "count": 1
+        },
+        {
+          "type": "u16",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 4
+        },
+        {
+          "type": "u32",
+          "count": 4
+        },
+        {
+          "type": "u32",
+          "count": 1
+        }
+      ],
+      "packed_bytes": 48,
+      "native_x64_bytes": 48,
+      "previously_claimed_bytes": 64
+    },
+    {
+      "name": "ColossusWalkerController",
+      "document": "AI_FACTION_SPEC.md",
+      "fields": [
+        {
+          "type": "u64",
+          "count": 1
+        },
+        {
+          "type": "u16",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 3
+        },
+        {
+          "type": "f32",
+          "count": 18
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        }
+      ],
+      "packed_bytes": 115,
+      "native_x64_bytes": 120,
+      "previously_claimed_bytes": 96
+    },
+    {
+      "name": "PlayerProfile",
+      "document": "CLAN_SPEC.md",
+      "fields": [
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u16",
+          "count": 1
+        },
+        {
+          "type": "u64",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 7
+        },
+        {
+          "type": "u64",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        }
+      ],
+      "packed_bytes": 41,
+      "native_x64_bytes": 48,
+      "previously_claimed_bytes": 64
+    },
+    {
+      "name": "ClanNode",
+      "document": "CLAN_SPEC.md",
+      "fields": [
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 32
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u16",
+          "count": 1
+        },
+        {
+          "type": "u64",
+          "count": 1
+        },
+        {
+          "type": "u64",
+          "count": 4
+        },
+        {
+          "type": "u32",
+          "count": 1
+        }
+      ],
+      "packed_bytes": 86,
+      "native_x64_bytes": 96,
+      "previously_claimed_bytes": 128
+    },
+    {
+      "name": "PowerArmorFrame",
+      "document": "COMBAT_EXO_SPEC.md",
+      "fields": [
+        {
+          "type": "u64",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 3
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "u16",
+          "count": 6
+        },
+        {
+          "type": "f32",
+          "count": 6
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        }
+      ],
+      "packed_bytes": 70,
+      "native_x64_bytes": 72,
+      "previously_claimed_bytes": 80
+    },
+    {
+      "name": "HiddenSafetyNode",
+      "document": "COMBAT_EXO_SPEC.md",
+      "fields": [
+        {
+          "type": "u64",
+          "count": 1
+        },
+        {
+          "type": "u64",
+          "count": 1
+        },
+        {
+          "type": "u64",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u16",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        }
+      ],
+      "packed_bytes": 39,
+      "native_x64_bytes": 40,
+      "previously_claimed_bytes": 96
+    },
+    {
+      "name": "BaseEngineeringGrid",
+      "document": "BASE_ENGINEERING_SPEC.md",
+      "fields": [
+        {
+          "type": "u64",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 5
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        }
+      ],
+      "packed_bytes": 37,
+      "native_x64_bytes": 40,
+      "previously_claimed_bytes": 128
+    },
+    {
+      "name": "GridNodeAppliance",
+      "document": "BASE_ENGINEERING_SPEC.md",
+      "fields": [
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 1
+        }
+      ],
+      "packed_bytes": 18,
+      "native_x64_bytes": 20,
+      "previously_claimed_bytes": 48
+    },
+    {
+      "name": "EnvironmentState",
+      "document": "ENVIRONMENT_SPEC.md",
+      "fields": [
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 3
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        }
+      ],
+      "packed_bytes": 30,
+      "native_x64_bytes": 36,
+      "previously_claimed_bytes": 64
+    },
+    {
+      "name": "InventoryItem",
+      "document": "INVENTORY_SPEC.md",
+      "fields": [
+        {
+          "type": "u64",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u16",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        }
+      ],
+      "packed_bytes": 28,
+      "native_x64_bytes": 32,
+      "previously_claimed_bytes": 32
+    },
+    {
+      "name": "EntityTelemetry",
+      "document": "MAP_SPEC.md",
+      "fields": [
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        }
+      ],
+      "packed_bytes": 14,
+      "native_x64_bytes": 20,
+      "previously_claimed_bytes": 16
+    },
+    {
+      "name": "GlobalEvent",
+      "document": "MAP_SPEC.md",
+      "fields": [
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 2
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 32
+        }
+      ],
+      "packed_bytes": 53,
+      "native_x64_bytes": 56,
+      "previously_claimed_bytes": 64
+    },
+    {
+      "name": "NetPacketHeader",
+      "document": "MULTIPLAYER_SPEC.md",
+      "fields": [
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u16",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        }
+      ],
+      "packed_bytes": 18,
+      "native_x64_bytes": 20,
+      "previously_claimed_bytes": 20
+    },
+    {
+      "name": "QuestState",
+      "document": "QUEST_RAID_SPEC.md",
+      "fields": [
+        {
+          "type": "u64",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u16",
+          "count": 1
+        },
+        {
+          "type": "u16",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 2
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        }
+      ],
+      "packed_bytes": 33,
+      "native_x64_bytes": 40,
+      "previously_claimed_bytes": 64
+    },
+    {
+      "name": "PlayerBountyContract",
+      "document": "QUEST_RAID_SPEC.md",
+      "fields": [
+        {
+          "type": "u64",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u64",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        }
+      ],
+      "packed_bytes": 29,
+      "native_x64_bytes": 40,
+      "previously_claimed_bytes": 96
+    },
+    {
+      "name": "ServerInfo",
+      "document": "SERVER_BROWSER_SPEC.md",
+      "fields": [
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u16",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 2
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u16",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 32
+        },
+        {
+          "type": "u8",
+          "count": 32
+        }
+      ],
+      "packed_bytes": 83,
+      "native_x64_bytes": 84,
+      "previously_claimed_bytes": 96
+    },
+    {
+      "name": "SocialPostNode",
+      "document": "SOCIAL_MESSENGER_SPEC.md",
+      "fields": [
+        {
+          "type": "u64",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u64",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u64",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 2
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        }
+      ],
+      "packed_bytes": 57,
+      "native_x64_bytes": 72,
+      "previously_claimed_bytes": 128
+    },
+    {
+      "name": "SurvivorBioState",
+      "document": "SURVIVAL_SPEC.md",
+      "fields": [
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 6
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        }
+      ],
+      "packed_bytes": 60,
+      "native_x64_bytes": 60,
+      "previously_claimed_bytes": 48
+    },
+    {
+      "name": "VehicleEntityState",
+      "document": "VEHICLE_SPEC.md",
+      "fields": [
+        {
+          "type": "u64",
+          "count": 1
+        },
+        {
+          "type": "u16",
+          "count": 1
+        },
+        {
+          "type": "u16",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 3
+        },
+        {
+          "type": "f32",
+          "count": 3
+        },
+        {
+          "type": "f32",
+          "count": 3
+        },
+        {
+          "type": "f32",
+          "count": 4
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 4
+        },
+        {
+          "type": "f32",
+          "count": 2
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        }
+      ],
+      "packed_bytes": 109,
+      "native_x64_bytes": 112,
+      "previously_claimed_bytes": 112
+    },
+    {
+      "name": "WeaponModularGraph",
+      "document": "WEAPON_CRAFT_SPEC.md",
+      "fields": [
+        {
+          "type": "u64",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u16",
+          "count": 6
+        },
+        {
+          "type": "f32",
+          "count": 6
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        }
+      ],
+      "packed_bytes": 54,
+      "native_x64_bytes": 56,
+      "previously_claimed_bytes": 64
+    },
+    {
+      "name": "EmperorTitanState",
+      "document": "EMPEROR_TITAN_SPEC.md",
+      "fields": [
+        {
+          "type": "u64",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 3
+        },
+        {
+          "type": "f32",
+          "count": 3
+        },
+        {
+          "type": "f32",
+          "count": 18
+        },
+        {
+          "type": "u8",
+          "count": 6
+        },
+        {
+          "type": "f32",
+          "count": 6
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u16",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        }
+      ],
+      "packed_bytes": 157,
+      "native_x64_bytes": 160,
+      "previously_claimed_bytes": 160
+    },
+    {
+      "name": "NetVoiceFramePacket",
+      "document": "AUDIO_COMMS_SPEC.md",
+      "fields": [
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "u16",
+          "count": 1
+        },
+        {
+          "type": "u32",
+          "count": 1
+        },
+        {
+          "type": "f32",
+          "count": 3
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 1
+        },
+        {
+          "type": "u16",
+          "count": 1
+        },
+        {
+          "type": "u8",
+          "count": 80
+        },
+        {
+          "type": "u32",
+          "count": 1
+        }
+      ],
+      "packed_bytes": 114,
+      "native_x64_bytes": 116,
+      "previously_claimed_bytes": null
+    }
+  ]
+}
